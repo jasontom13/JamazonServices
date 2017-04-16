@@ -1,0 +1,15 @@
+{
+  "name": "amazonservices",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Jason Tom",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.1",
+    "request": "^2.79.0"
+  }
+}
