@@ -8,7 +8,6 @@ var ebayID = 'JasonTom-Jamazon-PRD-82466ad0e-648f6631';
 var walmartKey = '2a5cbmcqb4wn56wbfhfe37e5'
 var eBayUrl = `https://svcs.ebay.com/services/search/FindingService/v1?SECURITY-APPNAME=${ebayID}&OPERATION-NAME=findItemsByKeywords&SERVICE-VERSION=1.0.0&RESPONSE-DATA-FORMAT=JSON&REST-PAYLOAD&paginationInput.entriesPerPage=6&GLOBAL-ID=EBAY-US&siteid=0&keywords=`;
 var walmartUrl = `http://api.walmartlabs.com/v1/search?apiKey=${walmartKey}&query=`;
-var port = '8000';
 
 var config = {
     apiKey: "AIzaSyBUEK9ezt4FcUQo_hyWkCJ3D5IHEgEvMdo",
@@ -40,4 +39,4 @@ app.get('/walmart/search/:query', function(req, res) {
 
 // START THE SERVER
 // ==============================================
-app.listen(port);
+app.listen(process.env.PORT || 5000);
