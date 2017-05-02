@@ -18,7 +18,7 @@ var config = {
     messagingSenderId: "973631780135"
   };
 
-app.get('/ebay/search/:query', function(req, res) {
+app.get('/Ebay/search/:query', function(req, res) {
   request(eBayUrl + req.params.query, function (error, response, body) {
     if (!error && response.statusCode == 200) {
       res.header('Access-Control-Allow-Origin', '*');
@@ -28,7 +28,7 @@ app.get('/ebay/search/:query', function(req, res) {
 
 });
 
-app.get('/walmart/search/:query', function(req, res) {
+app.get('/Walmart/search/:query', function(req, res) {
   request(walmartUrl + req.params.query, function(error, response, body) {
     res.header("Access-Control-Allow-Origin", "*");
     res.send(body);
